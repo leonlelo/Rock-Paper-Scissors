@@ -30,42 +30,45 @@ elif playerinput == "Paper": #If player selected paper
     if choices == "Paper": #Draw
         print("Robot:", choices)
         print("Player:", playerinput)
-        print("Draw")
+        print("Its a draw!")
 
     elif choices == "Rock": #Player won
         print("Robot:", choices) 
         print("Player:", playerinput) 
-        print("You won") 
+        print("Its an victory for the player!") 
 
     elif choices == "Scissors": #Robot won
         print("Robot:", choices)
         print("Player:", playerinput)
-        print("Robot won")
+        print("Its a victory for the robot!")
 
     else: #Rare error
-        print("Error")
+        print("Error!")
         exit()
+
+
 
 elif playerinput == "Scissors": #If player selected scissors
     if choices == "Scissors": #Draw
         print("Robot:", choices)
         print("Player:", playerinput)
-        print("Draw")
+        print("Its an intens draw!")
 
     elif choices == "Paper": #Player won
         print("Robot:", choices)
         print("Player:", playerinput)
-        print("Player won")
+        print("The player won!")
 
-    elif choices == "Rock":
+    elif choices == "Rock": #Robot won
         print("Robot:", choices)
         print("Player:", playerinput)
-        print("Robot won")
+        print("Its an intens victory for the robot!")
 
     else: #Rare error
-        print("Error")
+        print("Error!")
         exit()
 
 else: #If player did not type rock paper or scissors
-    print("Error, try type Rock Paper or Scissors, remember captital letters first.")
+    print("Error, try type Rock Paper or Scissors, remember captital letters first!")
     exit()
+
