@@ -1,5 +1,14 @@
 import random
 
+RED = '\033[91m'
+GREEN = '\033[92m'
+YELLOW = '\033[93m'
+BLUE = '\033[94m'
+MAGENTA = '\033[95m'
+CYAN = '\033[96m'
+RESET = '\033[0m'
+
+
 choice = ["Rock", "Paper", "Scissors"]
 choices = random.choice(choice)
 
@@ -7,19 +16,19 @@ playerinput = (input("Rock, Paper or Scissors? "))
 
 if playerinput == "Rock": #If player selected rock
     if choices == "Rock": #Draw
-        print("Robot:",choices)
-        print("Player:",playerinput)
-        print("It's a draw")
+        print(RED + "Robot:",choices + RESET)
+        print(GREEN + "Player:",playerinput + RESET)
+        print(BLUE + "It's a draw" + RESET)
 
     elif choices == "Paper": #Robot won
-        print("Robot:", choices)
-        print("Player:", playerinput)
-        print("It's a victory for the player!")
+        print(CYAN + "Robot:", choices + RESET)
+        print(GREEN + "Player:", playerinput + RESET)
+        print(BLUE + "It's a victory for the player!" + RESET)
 
     elif choices == "Scissors": #Player won
-        print("Robot:",choices)
-        print("Player:",playerinput)
-        print("It's victory for the robot!")
+        print(YELLOW + "Robot:",choices + RESET)
+        print( CYAN +"Player:",playerinput + RESET)
+        print(RED + "It's victory for the robot!" + RESET)
 
     else: #An extremely rare error
         print("Error")
